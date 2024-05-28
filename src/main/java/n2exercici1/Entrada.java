@@ -7,7 +7,7 @@ public class Entrada {
 
 	static Scanner teclat = new Scanner(System.in);
 	
-	// Mètodes a implantar capturant   l’excepció de la classe InputMismatchException:
+	// Mètodes a implantar capturant l’excepció de la classe InputMismatchException:
 
 	public static byte llegirByte(String missatge) throws InputMismatchException  {
 		byte valor = 0;
