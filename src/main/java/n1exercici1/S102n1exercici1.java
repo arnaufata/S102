@@ -1,5 +1,9 @@
 package n1exercici1;
 
+import n1exercici1.models.Producte;
+import n1exercici1.models.Venda;
+import n1exercici1.models.exeptions.VendaBuidaException;
+
 public class S102n1exercici1 {
 
     public static void main(String[] args) {

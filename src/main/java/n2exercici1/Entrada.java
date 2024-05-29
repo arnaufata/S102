@@ -19,6 +19,7 @@ public class Entrada {
 				valid = true;
 			} catch (InputMismatchException e) {
 				System.out.println("Error: Format incorrecte. Siusplau, introdueix un byte vàlid.");
+			} finally {
 				teclat.nextLine();
 			}
 		} while (!valid);
@@ -35,6 +36,7 @@ public class Entrada {
 				valid = true;
 			} catch (InputMismatchException e) {
 				System.out.println("Error: Format incorrecte. Siusplau, introdueix un int vàlid.");
+			} finally {
 				teclat.nextLine();
 			}
 		} while (!valid);
@@ -51,6 +53,7 @@ public class Entrada {
 				valid = true;
 			} catch (InputMismatchException e) {
 				System.out.println("Error: Format incorrecte. Siusplau, introdueix un float vàlid.");
+			} finally {
 				teclat.nextLine();
 			}
 		} while (!valid);
@@ -67,6 +70,7 @@ public class Entrada {
 				valid = true;
 			} catch (InputMismatchException e) {
 				System.out.println("Error: Format incorrecte. Siusplau, introdueix un double vàlid.");
+			} finally {
 				teclat.nextLine();
 			}
 		} while (!valid);
@@ -90,6 +94,8 @@ public class Entrada {
 				}
 			} catch (Exception e) {
 				System.out.println(e.getMessage());
+			} finally {
+				teclat.nextLine();
 			}
 		} while (!valid);
 		return valor;
@@ -105,7 +111,6 @@ public class Entrada {
 				valid = true;
 			} catch (Exception e) {
 				System.out.println("Error: Format incorrecte. Siusplau, introdueix un String vàlid.");
-				teclat.nextLine();
 			}
 		} while (!valid);
 		return valor;

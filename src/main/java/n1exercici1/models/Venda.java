@@ -1,4 +1,6 @@
-package n1exercici1;
+package n1exercici1.models;
+
+import n1exercici1.models.exeptions.VendaBuidaException;
 
 import java.util.ArrayList;
 
@@ -28,7 +30,7 @@ public class Venda {
 
     // ALTREA MÈTODES
 
-    public void calcularTotal() throws VendaBuidaException{
+    public void calcularTotal() throws VendaBuidaException {
         if (productes.isEmpty()){
             throw new VendaBuidaException();
         } else {
