@@ -9,7 +9,7 @@ public class Entrada {
 	
 	// Mètodes a implantar capturant l’excepció de la classe InputMismatchException:
 
-	public static byte llegirByte(String missatge) throws InputMismatchException  {
+	public static byte llegirByte(String missatge) {
 		byte valor = 0;
 		boolean valid = false;
 		do {
@@ -26,7 +26,7 @@ public class Entrada {
 		return valor;
 	}
 
-	public static int llegirInt(String missatge) throws InputMismatchException {
+	public static int llegirInt(String missatge) {
 		int valor = 0;
 		boolean valid = false;
 		do {
@@ -43,7 +43,7 @@ public class Entrada {
 		return valor;
 	}
 
-	public static float llegirFloat(String missatge) throws InputMismatchException {
+	public static float llegirFloat(String missatge) {
 		float valor = 0;
 		boolean valid = false;
 		do {
@@ -60,7 +60,7 @@ public class Entrada {
 		return valor;
 	}
 
-	public static double llegirDouble(String missatge) throws InputMismatchException {
+	public static double llegirDouble(String missatge) {
 		double valor = 0;
 		boolean valid = false;
 		do {

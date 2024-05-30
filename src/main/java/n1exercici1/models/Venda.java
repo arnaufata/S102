@@ -15,7 +15,6 @@ public class Venda {
 
     public Venda( ){
         this.productes      = new ArrayList<>();
-        this.preuTotalVenda = 0.0;
     }
 
     // GETTERS & SETTERS
@@ -34,7 +33,6 @@ public class Venda {
         if (productes.isEmpty()){
             throw new VendaBuidaException();
         } else {
-            preuTotalVenda = 0.0;
             for(Producte producte : productes){
                 preuTotalVenda += producte.getPreu();
             }
